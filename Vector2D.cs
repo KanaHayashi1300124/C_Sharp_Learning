@@ -8,29 +8,36 @@ namespace Exercise601
 {
     class Vector2D
     {
-        public double x, y;
         public void Add(Vector2D v)
         {
-            x += v.x;
-            y += v.y;
+            X += v.X;
+            Y += v.Y;
         }
 
         public void Sub(Vector2D v)
         {
-            x -= v.x;
-            y -= v.y;
+            X -= v.X;
+            Y -= v.Y;
         }
 
         public void Mul(double k)
         {
-            x *= k;
-            y *= k;
+            X *= k;
+            Y *= k;
         }
 
         public double DotProduct(Vector2D v)
         {
-            return x * v.x + y * v.y;
+            return X * v.X + Y * v.Y;
         }
         
+        public double X
+        {
+            set; get;
+        }
+        public double Y
+        {
+            set; get;
+        }
     }
 }
