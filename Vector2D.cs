@@ -8,6 +8,22 @@ namespace Exercise601
 {
     class Vector2D
     {
+        public Vector2D()
+        {
+
+        }
+
+        public Vector2D(double x, double y)
+        {
+            X = x;
+            Y = y;
+        }
+
+        public Vector2D(Vector2D v)
+        {
+            X = v.X;
+            Y = v.Y;
+        }
         public void Add(Vector2D v)
         {
             X += v.X;
