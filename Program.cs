@@ -10,14 +10,11 @@ namespace Exercise601
     {
         static void Main(string[] args)
         {
-            Vector2D v1 = new Vector2D();
-            v1.X = 1.0;
-            v1.Y = 1.0;
+            Vector2D v1 = new Vector2D(1.0, 1.0);
             Console.WriteLine("v1=({0}, {1})", v1.X, v1.Y );
+            Vector2D w = new Vector2D(1.0, -1.0);
+            Vector2D v2 = new Vector2D(w);
 
-            Vector2D v2 = new Vector2D();
-            v2.X = 1.0;
-            v2.Y = -1.0;
             Console.WriteLine("v2=({0}, {1})", v2.X, v2.Y );
 
             v1.Add(v2);
