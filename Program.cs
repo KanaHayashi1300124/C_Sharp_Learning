@@ -14,6 +14,7 @@ namespace Exercise601
         }
         static void Main(string[] args)
         {
+            Console.WriteLine("section1");
             Vector2D v1 = new Vector2D(1.0, 1.0);
             Show("v1",v1);
             Vector2D w = new Vector2D(1.0, -1.0);
@@ -28,6 +29,15 @@ namespace Exercise601
             v1.Mul(2.0);
             Show("v1",v1);
             Console.WriteLine("v1,v2の内積: {0}", v1.DotProduct(v2));
+
+
+            Console.Write("1つ目の数:");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("1つ目の数:");
+            int b = int.Parse(Console.ReadLine());
+            int n = Numeric.Max(a,b);
+            Console.WriteLine("2の数値のうちの最大値:{0}", n);
+
         }
     }
 }
