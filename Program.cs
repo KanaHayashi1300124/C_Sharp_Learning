@@ -38,6 +38,18 @@ namespace Exercise601
             int n = Numeric.Max(a,b);
             Console.WriteLine("2の数値のうちの最大値:{0}", n);
 
+            Console.WriteLine("実数値を入力してください");
+            double n = double.Parse(Console.ReadLine());
+            if(n >= 0)
+            {
+                double r = Math.Sqrt(n);
+                Console.WriteLine("{0}の平方根は{1}です。", n, r);
+            }
+            else
+            {
+                Console.WriteLine("星の数を入力してください。");
+            }
+
         }
     }
 }
