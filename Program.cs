@@ -35,8 +35,8 @@ namespace Exercise601
             int a = int.Parse(Console.ReadLine());
             Console.Write("1つ目の数:");
             int b = int.Parse(Console.ReadLine());
-            int n = Numeric.Max(a,b);
-            Console.WriteLine("2の数値のうちの最大値:{0}", n);
+            int num = Numeric.Max(a,b);
+            Console.WriteLine("2の数値のうちの最大値:{0}", num);
 
             Console.WriteLine("実数値を入力してください");
             double n = double.Parse(Console.ReadLine());
@@ -49,6 +49,26 @@ namespace Exercise601
             {
                 Console.WriteLine("星の数を入力してください。");
             }
+
+            Console.Write("P1.X = ");
+            double x1 = int.Parse(Console.ReadLine());
+            Console.Write("P1.Y = ");
+            double y1 = int.Parse(Console.ReadLine());
+            Console.Write("P2.X = ");
+            double x2 = int.Parse(Console.ReadLine());
+            Console.Write("P2.Y = ");
+            double y2 = int.Parse(Console.ReadLine());
+            Point2D p1 = new Point2D(x1, y1);
+            Point2D p2 = new Point2D(x2, y2);
+
+            Console.WriteLine("p1 = {0} p2 = {1}", p1, p2);
+            Console.WriteLine("p1,p2の距離:{0}", p1.Distance(p2));
+
+            if(p1.Equals(p2))
+            {
+                Console.WriteLine("p1,p2は同一の点です。");
+            }
+
 
         }
     }
