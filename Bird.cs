@@ -8,7 +8,9 @@ namespace Exercise601
 {
     abstract class Bird
     {
-        public Bird(string name)
+        private String name;
+
+        public Bird(String name)
         {
             this.name = name;
         }
