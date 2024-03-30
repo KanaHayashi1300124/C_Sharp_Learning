@@ -69,10 +69,11 @@ namespace Exercise601
                 Console.WriteLine("p1,p2は同一の点です。");
             }
 
-            Bird[] bird = new Bird[3];
+            Bird[] bird = new Bird[4];
             bird[0] = new Crow();
             bird[1] = new Sparrow();
             bird[2] = new Chicken();
+            bird[3] = new Pigeion();
             for(int i = 0; i < bird.Length; i++)
             {
                 Console.Write(bird[i].Name +";");
