@@ -80,6 +80,11 @@ namespace Exercise601
                 bird[i].Sing();
             }
 
+            Data d = new Data()
+            d.Write(1);
+            int num  =  d.Read();
+            Console.WriteLine("data = {0}", num);
+
         }
     }
 }
