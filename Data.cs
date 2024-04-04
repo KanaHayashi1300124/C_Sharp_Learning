@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Exercise601
 {
-    class Data
+    class Data : IWrite, IRead
     {
         private int num = 0;
 
