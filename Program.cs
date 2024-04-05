@@ -87,6 +87,13 @@ namespace Exercise601
             int num  =  d.Read();
             Console.WriteLine("data = {0}", num);
 
+            IMul m = new Mull();
+            Console.Write("a=");
+            int A = int.Parse(Console.ReadLine());
+            Console.Write("b=");
+            int B = int.Parse(Console.ReadLine());
+            Console.WriteLine("{0} * {1} = {2}", a, b, m.Calc(a,b));
+
         }
     }
 }
