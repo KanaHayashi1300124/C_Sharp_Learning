@@ -94,6 +94,23 @@ namespace Exercise601
             int B = int.Parse(Console.ReadLine());
             Console.WriteLine("{0} * {1} = {2}", a, b, m.Calc(a,b));
 
+            List<int> l = new List<int>();
+            while(true)
+            {
+                Console.Write("1から10の整数を入力");
+                int num2 = int.Parse(Console.ReadLine());
+                if(num< 1 || num > 10)
+                {
+                    break;
+                }
+                l.add(num2)
+            }
+            foreach(int n in l)
+            {
+                Console.Write("{0}",n);
+            }
+            Console.WriteLine();
+            Console.WriteLine("最大値{0}, 最小値{1}", l.Max(), l.Min());
         }
     }
 }
