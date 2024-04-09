@@ -105,6 +105,8 @@ namespace Exercise601
                 }
                 l.add(num2)
             }
+            l.Sort();
+            l.Reverse();
             foreach(int n in l)
             {
                 Console.Write("{0}",n);
